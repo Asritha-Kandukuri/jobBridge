@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Student Dashboard – JobBridge</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="student-dashboard">
+<header class="navbar">
+  <div class="logo">JobBridge</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="login.html">Logout</a></li>
+  </ul>
+</header>
+
+<main class="container page-layout">
+  <aside class="sidebar dashboard-sidebar">
+    <h3>Student Menu</h3>
+    <ul class="dashboard-menu">
+      <li><a href="#profile" class="active">Profile</a></li>
+      <li><a href="#applied-jobs">Applied Jobs</a></li>
+      <li><a href="#applied-internships">Applied Internships</a></li>
+      <li><a href="#saved-jobs">Saved Jobs</a></li>
+      <li><a href="#settings">Settings</a></li>
+      <li><a href="login.html">Logout</a></li>
+    </ul>
+  </aside>
+
+  <section style="display:flex;flex-direction:column;gap:20px">
+    <div class="card" id="profile">
+      <h2>Profile</h2>
+      <p style="font-size:0.9rem;color:#6b7280;margin-top:6px">
+        Complete your profile to get better recommendations.
+      </p>
+      <form data-demo style="margin-top:10px">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" />
+          </div>
+          <div class="form-group">
+            <label>Primary Role</label>
+            <input type="text" placeholder="e.g. Frontend Developer" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Skills</label>
+          <input type="text" placeholder="e.g. HTML, CSS, JS, React" />
+        </div>
+        <button class="btn-primary" type="submit">Save Profile</button>
+      </form>
+    </div>
+
+    <div class="card" id="applied-jobs">
+      <h2>Applied Jobs</h2>
+      <p style="font-size:0.9rem;color:#6b7280;margin-top:6px">
+        Track the jobs you have applied to.
+      </p>
+    </div>
+
+    <div class="card" id="applied-internships">
+      <h2>Applied Internships</h2>
+      <p style="font-size:0.9rem;color:#6b7280;margin-top:6px">
+        Track your internship applications here.
+      </p>
+    </div>
+
+    <div class="card" id="saved-jobs">
+      <h2>Saved Jobs</h2>
+      <p style="font-size:0.9rem;color:#6b7280;margin-top:6px">
+        Save interesting roles to review later.
+      </p>
+    </div>
+
+    <div class="card" id="settings">
+      <h2>Settings</h2>
+      <p style="font-size:0.9rem;color:#6b7280;margin-top:6px">
+        Manage account preferences and notifications.
+      </p>
+    </div>
+
+    <!-- Recommended -->
+    <div class="card">
+      <h2>Recommended Jobs</h2>
+      <div class="grid grid-3" style="margin-top:10px">
+        <div class="card">
+          <h3>Junior Frontend Developer</h3>
+          <p style="font-size:0.85rem;color:#4b5563">
+            Matching your skills: HTML, CSS, JavaScript.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Recommended Internships</h2>
+      <div class="grid grid-3" style="margin-top:10px">
+        <div class="card">
+          <h3>React Intern</h3>
+          <p style="font-size:0.85rem;color:#4b5563">
+            6-month internship with mentorship and stipend.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span>© 2025 JobBridge</span>
+    <span>Student Dashboard</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
